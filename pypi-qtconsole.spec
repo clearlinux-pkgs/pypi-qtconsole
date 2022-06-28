@@ -4,7 +4,7 @@
 #
 Name     : pypi-qtconsole
 Version  : 5.3.1
-Release  : 73
+Release  : 74
 URL      : https://files.pythonhosted.org/packages/84/81/021c523970b3dd8d80bdb609c2e60d87da66d73667cd9eef5621e667311c/qtconsole-5.3.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/84/81/021c523970b3dd8d80bdb609c2e60d87da66d73667cd9eef5621e667311c/qtconsole-5.3.1.tar.gz
 Summary  : Jupyter Qt console
@@ -89,7 +89,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656378068
+export SOURCE_DATE_EPOCH=1656403726
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
