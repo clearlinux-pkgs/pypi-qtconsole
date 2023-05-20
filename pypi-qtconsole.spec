@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-qtconsole
-Version  : 5.4.2
-Release  : 84
-URL      : https://files.pythonhosted.org/packages/23/47/306cb8e03425231fa9edc14969b528088b484de1cbc7be3e171c01e942d0/qtconsole-5.4.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/23/47/306cb8e03425231fa9edc14969b528088b484de1cbc7be3e171c01e942d0/qtconsole-5.4.2.tar.gz
+Version  : 5.4.3
+Release  : 85
+URL      : https://files.pythonhosted.org/packages/6f/6c/0e20886d4024f8b0dec690f2be0206dbad3abab9b87fc90fba8b990c720a/qtconsole-5.4.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/6f/6c/0e20886d4024f8b0dec690f2be0206dbad3abab9b87fc90fba8b990c720a/qtconsole-5.4.3.tar.gz
 Summary  : Jupyter Qt console
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -84,10 +84,10 @@ python3 components for the pypi-qtconsole package.
 
 
 %prep
-%setup -q -n qtconsole-5.4.2
-cd %{_builddir}/qtconsole-5.4.2
+%setup -q -n qtconsole-5.4.3
+cd %{_builddir}/qtconsole-5.4.3
 pushd ..
-cp -a qtconsole-5.4.2 buildavx2
+cp -a qtconsole-5.4.3 buildavx2
 popd
 
 %build
@@ -95,15 +95,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680552580
+export SOURCE_DATE_EPOCH=1684611664
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
