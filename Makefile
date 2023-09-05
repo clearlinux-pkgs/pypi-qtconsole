@@ -1,5 +1,5 @@
 PKG_NAME := pypi-qtconsole
-URL = https://files.pythonhosted.org/packages/6f/6c/0e20886d4024f8b0dec690f2be0206dbad3abab9b87fc90fba8b990c720a/qtconsole-5.4.3.tar.gz
+URL = https://files.pythonhosted.org/packages/78/75/94832a00a40467595ddb3157f0f91c56742f6f2a6bdb65001dfb887728c5/qtconsole-5.4.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-qtconsole
-Version  : 5.4.3
-Release  : 85
-URL      : https://files.pythonhosted.org/packages/6f/6c/0e20886d4024f8b0dec690f2be0206dbad3abab9b87fc90fba8b990c720a/qtconsole-5.4.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/6f/6c/0e20886d4024f8b0dec690f2be0206dbad3abab9b87fc90fba8b990c720a/qtconsole-5.4.3.tar.gz
+Version  : 5.4.4
+Release  : 86
+URL      : https://files.pythonhosted.org/packages/78/75/94832a00a40467595ddb3157f0f91c56742f6f2a6bdb65001dfb887728c5/qtconsole-5.4.4.tar.gz
+Source0  : https://files.pythonhosted.org/packages/78/75/94832a00a40467595ddb3157f0f91c56742f6f2a6bdb65001dfb887728c5/qtconsole-5.4.4.tar.gz
 Summary  : Jupyter Qt console
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -84,10 +84,10 @@ python3 components for the pypi-qtconsole package.
 
 
 %prep
-%setup -q -n qtconsole-5.4.3
-cd %{_builddir}/qtconsole-5.4.3
+%setup -q -n qtconsole-5.4.4
+cd %{_builddir}/qtconsole-5.4.4
 pushd ..
-cp -a qtconsole-5.4.3 buildavx2
+cp -a qtconsole-5.4.4 buildavx2
 popd
 
 %build
@@ -95,7 +95,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1684611664
+export SOURCE_DATE_EPOCH=1693933631
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
