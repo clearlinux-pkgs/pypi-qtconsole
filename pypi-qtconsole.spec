@@ -5,7 +5,7 @@
 #
 Name     : pypi-qtconsole
 Version  : 5.4.4
-Release  : 87
+Release  : 88
 URL      : https://files.pythonhosted.org/packages/78/75/94832a00a40467595ddb3157f0f91c56742f6f2a6bdb65001dfb887728c5/qtconsole-5.4.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/78/75/94832a00a40467595ddb3157f0f91c56742f6f2a6bdb65001dfb887728c5/qtconsole-5.4.4.tar.gz
 Summary  : Jupyter Qt console
